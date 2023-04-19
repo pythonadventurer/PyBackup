@@ -34,3 +34,4 @@ GNU General Public License 3. See the LICENSE file for details.
 - To load a saved backup, click on the **Select Saved Backup** drop down list and select the name of the desired backup. The source and destination boxes will populate from the saved backup. You can then click **Run Now** to execute the saved backup.
 
 ## Credit
+Thanks to John Elder at https://tkinter.com/ for providing a helpful, up-to-date course on Python's tkinter library.
