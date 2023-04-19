@@ -7,7 +7,7 @@ import datetime as dt
 def zip_backup(source,dest):
     source = Path(source)
     timestamp = str(dt.datetime.now()).replace(" ","-").replace(":","")[:17]
-    dest = Path(dest,timestamp)
+    dest = Path(dest,timestamp + "-" + source.stem + ".zip")
 
 
     print(f"Backing up {source} to {dest}....")
