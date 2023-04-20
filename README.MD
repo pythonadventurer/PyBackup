@@ -21,7 +21,8 @@ GNU General Public License 3. See the LICENSE file for details.
 - ``python backup.py`` to launch.
 
 ## Confguration
-- Saved backups are contained in the file ``backups.json``.  
+- Saved backups are contained in the file ``backups.json``. 
+- Manually set the location of this file in ``config.ini`` --> `saved_backups`
   
 ## Screenshot
 ![](screenshot.jpg)
