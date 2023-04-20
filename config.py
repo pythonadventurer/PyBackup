@@ -15,12 +15,14 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
-from tkinter import *
-from tkinter import ttk
-from backup import *
-from gui import *
 
-root = Tk()
-PyBackup(root)
-root.mainloop()
+import configparser
+from pathlib import Path
+
+# Read config values into variables
+config = configparser.ConfigParser()
+config.read('config.ini')
+varSavedBackups = Path(config['saved_backups']['location'])
+
+
 
