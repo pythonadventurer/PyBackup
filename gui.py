@@ -7,6 +7,7 @@ from backup import *
 
 import json
 
+# TODO Add Log Window
 
 class PyBackup:
     def __init__(self,root):
