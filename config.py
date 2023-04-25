@@ -17,12 +17,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
 
 import configparser
+import os
 from pathlib import Path
 
 # Read config values into variables
 config = configparser.ConfigParser()
 config.read('config.ini')
+
 varSavedBackups = Path(config['saved_backups']['location'])
+
+if not os.path.isfile(varSavedBackups):
+    print("ERROR: Saved backups location not set in config.ini or invalid path")
+    print("Using default location: ./backups.json")
+    varSavedBackups = Path('./backups.json')
+
 
 
 
