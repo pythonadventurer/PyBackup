@@ -1,7 +1,7 @@
 # PyBackup - A simple personal backup utility
 *v0.0.1*
 
-Updated: 2023-04-17
+Updated: 2023-04-25
 
 ## Introduction
 
