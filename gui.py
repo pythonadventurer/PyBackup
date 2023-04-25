@@ -76,7 +76,7 @@ class MainFrame(Frame):
 
             def SaveBackupName():
                 varSaveBackup = txtValue.get()
-                save_backup(varSource.get(),varDest.get(),varSaveBackup)
+                save_backup(varSource.get(),varDest.get(),varSaveBackup, cboSelectSaved)
                 Popup.destroy()
 
             def Cancel():
@@ -92,7 +92,6 @@ class MainFrame(Frame):
             btnOK.grid(row=2,column=0,sticky=(W,E),padx=5,pady=5)
             btnCancel.grid(row=2,column=1,sticky=(W,E),padx=5,pady=5)
             
-
 
         def LoadBackup(e):
             backup = load_backup(varSavedBackup.get())

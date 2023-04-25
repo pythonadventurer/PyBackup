@@ -37,7 +37,7 @@ def zip_backup(source,dest):
 
 # TODO Warn if overwriting existing backup name
 
-def save_backup(source,dest,name):
+def save_backup(source,dest,name, backupsDropDown):
     with open(varSavedBackups,"r",encoding="utf-8") as f:
         saved_backups = json.load(f)
     saved_backups[name] = {}
@@ -46,6 +46,10 @@ def save_backup(source,dest,name):
 
     with open(varSavedBackups,"w",encoding="utf-8") as f:
         json.dump(saved_backups,f)
+
+    backupsDropDown.delete(0,"end")
+    backups_list = list(saved_backups.keys())
+    backupsDropDown['values'] = backups_list
 
 def load_backup(name):
     with open(varSavedBackups,"r",encoding="utf-8") as f:
