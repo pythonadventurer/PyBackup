@@ -16,9 +16,16 @@ GNU General Public License 3. See the LICENSE file for details.
  
 ## Installation
 - Written in Python 3.11 on Windows 11. Not tested in any other Python versions or operating systems.  I'm confident it can be made to work on Mac and Linux.
-- Has no requirements outside the Python standard library.
-- Download the repo as a zip file and extract.
-- ``python backup.py`` to launch.
+
+    ### OS X Install
+    - run `brew install python-tk` to install tkinter for mac as it's not part of the standard lib.
+    - Download the repo as a zip file and extract.
+    - ``python pybackup.py`` to launch.
+
+    ### Windows Install    
+    - Has no requirements outside the Python standard library.
+    - Download the repo as a zip file and extract.
+    - ``python pybackup.py`` to launch.
 
 ## Confguration
 - Saved backups are contained in the file ``backups.json``. 
