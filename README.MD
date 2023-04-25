@@ -15,7 +15,7 @@ Updated: 2023-04-17
 GNU General Public License 3. See the LICENSE file for details.
  
 ## Installation
-- Written in Python 3.11 on Windows 11. Not tested in any other Python versions or operating systems.  I'm confident it can be made to work on Mac and Linux.
+- Written in Python 3.11 on Windows 11. 
 
     ### OS X Install
     - run `brew install python-tk` to install tkinter for mac as it's not part of the standard lib.
