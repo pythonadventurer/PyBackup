@@ -38,7 +38,7 @@ GNU General Public License 3. See the LICENSE file for details.
 - Click the **Select Source** button to choose a directory to back up.
 - Click the **Select Destination** button to choose a directory to back up to. A time-stamped ZIP file will be created in this folder.
 - Click **Run Now** to execute the backup. A pop up will notify when the backup is completed.
-- Click **Save Backup** to save the backup configuration for later use.  The backup will appear by name in the **Select Saved Backup** drop down list.  You will need to re-start PyBackup for new backups to appear on this list.
+- Click **Save Backup** to save the backup configuration for later use.  The backup will appear by name in the **Select Saved Backup** drop down list. 
 - To load a saved backup, click on the **Select Saved Backup** drop down list and select the name of the desired backup. The source and destination boxes will populate from the saved backup. You can then click **Run Now** to execute the saved backup.
 
 ## Credit
