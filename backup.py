@@ -33,6 +33,8 @@ def zip_backup(source,dest):
         for file_path in source.rglob("*"):
             archive.write(file_path,
             arcname=file_path.relative_to(source))
+            print(file_path)
+            
     print("Backup completed.")
 
 # TODO Warn if overwriting existing backup name
